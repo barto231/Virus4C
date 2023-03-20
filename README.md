@@ -65,4 +65,5 @@ cmake -DCMAKE_BUILD_TYPE=Release . && make
 
 ## Files required to run the pipepline
 
-
+- Reads in (compressed) FASTQ format.
+- Configuration file (conf.yml)
