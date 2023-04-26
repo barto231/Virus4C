@@ -170,9 +170,12 @@ cmake -DCMAKE_BUILD_TYPE=Release . && make
   
   
   First you need to download the demo files and pipeline using:
+  ```
+  $ wget https://github.com/barto231/Virus4C.git
+$ unzip Virus4C.zip
+  ```
   
-  
-  First you need to compile all the required libraries with:
+  Then you need to compile all the required libraries with:
   ```
   ./build_libs.sh
   ```
@@ -188,15 +191,20 @@ cmake -DCMAKE_BUILD_TYPE=Release . && make
 bwa index hg19.fa
 samtools faidx hg19.fa
 
-bwa index HPV16.fa
-samtools faidx HPV16.fa
+bwa index HHV6A.fa
+samtools faidx HHV6A.fa
 
-cat hg19.fa HPV16.fa > hg19+HPV16.fa
-bwa index hg19+HPV16.fa
-samtools faidx hg19+HPV16.fa
+cat hg19.fa HHV6A.fa > hg19+HHV6A.fa
+bwa index hg19+HHV6A.fa
+samtools faidx hg19+HHV6A.fa
   ```
+
+Then modify the configuration file (conf.yml) 
+
+Change the location in which the fragmented genome will be generated (fragFolder).
+Change the location in which the bowtie2 index is stored
   
   
-  
+ ## Running the pipeline
   
   
