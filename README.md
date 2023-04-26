@@ -166,6 +166,11 @@ cmake -DCMAKE_BUILD_TYPE=Release . && make
 
   
 ## Demo Example
+  In this tutorial we will explain how to run the pipeline using 4C-seq data with HHV6A virus integration from Mariani et al. (SRA files SRR12721007).
+  
+  
+  First you need to download the demo files and pipeline using:
+  
   
   First you need to compile all the required libraries with:
   ```
