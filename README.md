@@ -201,9 +201,15 @@ samtools faidx hg19+HHV6A.fa
 Then modify the configuration file (conf.yml) 
 
 Change the location in which the fragmented genome will be generated (fragFolder).
+  
 Change the location in which the bowtie2 index is stored
   
   
  ## Running the pipeline
   
+  The simplest way to run the pipeline is
+  
+  ```
+  python Virus4C --vpFile=./example/VPinfo.txt --fqFolder=./example/ --outFolder=./outF/ /path/to/empty/workdir /path/to/host/reference /path/to/virus/reference /path/to/host+virus/reference 
+  ```
   
