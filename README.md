@@ -198,7 +198,6 @@ cat hg19.fa HHV6A.fa > hg19+HHV6A.fa
 bwa index hg19+HHV6A.fa
 samtools faidx hg19+HHV6A.fa
   ```
-
 Then modify the configuration file (conf.yml) 
 
 Change the location in which the fragmented genome will be generated (fragFolder).
