@@ -163,3 +163,20 @@ cmake -DCMAKE_BUILD_TYPE=Release . && make
 | bins           | Count reads for binned regions                                                                                                             |
 
 **Table 4.** Description of parameters that are recognized by the pipe4C.R script. * are required. 
+
+  
+##Demo Example
+  
+  First you need to compile all the required libraries with:
+  ```
+  ./build_libs.sh
+  ```
+  Then run:
+  
+  ```
+  cmake -DCMAKE_BUILD_TYPE=Release . && make
+  ```
+  
+  
+  
+  
