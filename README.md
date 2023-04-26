@@ -165,7 +165,7 @@ cmake -DCMAKE_BUILD_TYPE=Release . && make
 **Table 4.** Description of parameters that are recognized by the pipe4C.R script. * are required. 
 
   
-##Demo Example
+## Demo Example
   
   First you need to compile all the required libraries with:
   ```
@@ -176,6 +176,21 @@ cmake -DCMAKE_BUILD_TYPE=Release . && make
   ```
   cmake -DCMAKE_BUILD_TYPE=Release . && make
   ```
+  
+  Next the references are prepared for the human and virus genome:
+  
+  ```
+bwa index hg19.fa
+samtools faidx hg19.fa
+
+bwa index HPV16.fa
+samtools faidx HPV16.fa
+
+cat hg19.fa HPV16.fa > hg19+HPV16.fa
+bwa index hg19+HPV16.fa
+samtools faidx hg19+HPV16.fa
+  ```
+  
   
   
   
