@@ -145,22 +145,12 @@ cmake -DCMAKE_BUILD_TYPE=Release . && make
 | fqFolder*      | path to the folder containing the FASTQ files                                                                                              |
 | outFolder*     | path to the output folder                                                                                                                  |
 | confFile       | path to configuration file – default is conf.yml in folder containing the pipeline script                                                  |
-| mismatchMax    | The maximum number of mismatches allowed during demultiplexing                                                                             |
-| qualityCutoff  | Q-score. Trim 3′-end of all sequences using a sliding window as soon as 2 out of 5 nucleotides has quality encoding less than the Q-score  |
-| trimLength     | Trim reads to defined capture length from 3′-end                                                                                           |
-| minAmountReads | Minimum required amount of reads containing the primer sequence. If less reads are identified the experiment will not be further processed |
-| readsQuality   | Bowtie2 minimum required mapping quality score for mapped reads                                                                            |
-| mapUnique      | Extract uniquely mapped reads, based on the lack of XS tag                                                                                 |
 | cores          | Number of CPU cores for parallelization                                                                                                    |
-| wSize          | The running mean window size                                                                                                               |
-| nTop           | Top fragment ends discarded for normalization                                                                                              |
-| nonBlind       | Only keep non-blind fragments                                                                                                              |
 | wig            | Create wig files for all samples                                                                                                           |
 | bigwig         | Create bigWig files for all samples                                                                                                        |
 | plot           | Create viewpoint coverage plot for all samples                                                                                             |
 | genomePlot     | Create genomeplot for all samples (only possible if analysis is “all” in vpFile)                                                           |
-| tsv            | Create tab separated value file for all samples                                                                                            |
-| bins           | Count reads for binned regions                                                                                                             |
+
 
 **Table 4.** Description of parameters that are recognized by the pipe4C.R script. * are required. 
 
