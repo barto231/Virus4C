@@ -7,7 +7,7 @@ import rpy2.robjects as robjects
 from rpy2.robjects.packages import importr
 import pysam, pyfaidx
 import max_is_calc
-from functions import *
+#from functions import *
 
 
 base = importr('base')
@@ -15,23 +15,26 @@ utils = importr('utils')
 config = importr('config')
 catools = importr('catools')
 
-utils.install_packages('ShortRead', repos="https://git.bioconductor.org/packages/ShortRead")
-    utils.chooseBioCmirror(ind=1) # select the first mirror in the list
-    utils.install_packages('ShortRead')
+utils.install_packages('ShortRead',
+repos="https://git.bioconductor.org/packages/ShortRead")
+utils.chooseBioCmirror(ind=1) # select the first mirror in the list
+utils.install_packages('ShortRead')
 
-    ShortRead = importr('ShortRead')
+ShortRead = importr('ShortRead')
 
-utils.install_packages('GenomicRanges', repos="https://git.bioconductor.org/packages/GenomicRanges")
-    utils.chooseBioCmirror(ind=1) # select the first mirror in the list
-    utils.install_packages('GenomicRanges')
+utils.install_packages('GenomicRanges',
+repos="https://git.bioconductor.org/packages/GenomicRanges")
+utils.chooseBioCmirror(ind=1) # select the first mirror in the list
+utils.install_packages('GenomicRanges')
 
-    GenomicRanges = importr('GenomicRanges')
+GenomicRanges = importr('GenomicRanges')
 
-utils.install_packages('GenomicAlignments', repos="https://git.bioconductor.org/packages/GenomicAlignments")
-    utils.chooseBioCmirror(ind=1) # select the first mirror in the list
-    utils.install_packages('GenomicAlignments')
+utils.install_packages('GenomicAlignments',
+repos="https://git.bioconductor.org/packages/GenomicAlignments")
+utils.chooseBioCmirror(ind=1) # select the first mirror in the list
+utils.install_packages('GenomicAlignments')
 
-    GenomicAlignments = importr('GenomicAlignments')
+GenomicAlignments = importr('GenomicAlignments')
 
 
 VERSION = '1.1.6'
