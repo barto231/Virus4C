@@ -12,6 +12,7 @@ Each reference needs to be indexed and with bwa and samtools using the following
 ```
 bwa index host_reference.fa
 
+
 samtools faidx host_reference.fa
 ```
 ```
